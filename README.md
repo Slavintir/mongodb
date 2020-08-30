@@ -16,5 +16,5 @@ Before install you should have installed: **docker, docker-compose**
 ### ***Command***
 
 ```
-git clone git@github.com:Slavintir/mongodb.git; cd ./mongodb; chmod +x up.sh; ./install.sh;
+git clone git@github.com:Slavintir/mongodb.git; cd ./mongodb; chmod +x install.sh; ./install.sh;
 ```

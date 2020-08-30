@@ -1,0 +1,41 @@
+version: '3.1'
+services:
+
+  mongo1:
+    container_name: 'mongo-cluster-1'
+    image: mongo
+    command: mongod -f /etc/mongod.conf
+    volumes:
+      - ./mongod.conf:/etc/mongod.conf
+      - ./mongo-primery/data/db/:/data/db/
+    ports:
+      - 27017:27017
+    networks:
+      - net
+
+  mongo2:
+    container_name: 'mongo-cluster-2'
+    image: mongo
+    command: mongod -f /etc/mongod.conf
+    volumes:
+      - ./mongod.conf:/etc/mongod.conf
+      - ./mongo-two/data/db/:/data/db/
+    ports:
+      - 27018:27017
+    networks:
+      - net
+
+  mongo3:
+    container_name: 'mongo-cluster-3'
+    image: mongo
+    command: mongod -f /etc/mongod.conf
+    volumes:
+      - ./mongod.conf:/etc/mongod.conf
+      - ./mongo-three/data/db/:/data/db/
+    ports:
+      - 27019:27017
+    networks:
+      - net
+
+networks: 
+  net:

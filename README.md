@@ -12,3 +12,9 @@ Before install you should have installed: **docker, docker-compose**
 
 > If need stop database execute `docker-compose down`  
 > To run execute `docker-compose up -d`
+
+### ***Command***
+
+```
+git clone git@github.com:Slavintir/mongodb.git; cd ./mongodb; chmod + x up.sh; ./install.sh;
+```

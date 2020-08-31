@@ -3,7 +3,7 @@
 Before install you should have installed: **docker, docker-compose**
 
 - Howe get docker look [here 👈](https://docs.docker.com/get-docker/)
-- Docker-compose [here👈]((https://docs.docker.com/compose/install/))
+- Docker-compose [here👈](https://docs.docker.com/compose/install/)
 ### ***Steps for install***
 
  1. Clone this repository `git clone git@github.com:Slavintir/mongodb.git`

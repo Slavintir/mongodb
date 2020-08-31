@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo service docker start
 docker-compose up -d
 echo "In five seconds, we'll set up a replica."
 sleep 5
